@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0">
+            <!--Linkar com a pasta Css-->
+            <link rel="stylesheet" href="media_aluno/style.css">
+            <link rel="stylesheet" href="calculator/design.css">
+
+            <title></title>
+      </head>
+
+      <body>
+            <h1>Calculo da Media e Calculadora Simples </h1>
+            <div id="nota">
+                  <div class="center">
+                        <div class="cor">
+                              Primeira nota <input id="nota1"
+                                    type="number" placeholder="Nota"><br><br>
+                              Segunda nota <input id="nota2" type="number" placeholder="Nota">
+                              <br><br>
+                              Terceira nota <input id="nota3" type="number" placeholder="Nota"><br>
+                        </div>
+                        <button onclick="media()">Resultado </button>
+                        <button onclick="limpar()">Limpar</button>
+                  </div>
+            </div>
+            <!--Fim do Código Média -->
+            <!--Início Código calculator -->
+            <div class="floor">
+                  <div class="calculare">
+                        <h1>Calculator</h1>
+                        <p  id="experiment"></p>
+                        <table class="catalogue">
+                              <tr>
+                                    <td><button class="press"
+                                                onclick="clean()"><img
+                                                      src="calculator/letter_c_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="back()"><img
+                                                      src="calculator/back_arrow_left_icon.svg"
+                                                      alt="iconfinder">
+                                          </button></td>
+                                    <td><button class="press"
+                                                onclick="insert('/')"><img
+                                                      src="calculator/math_divide_icon.svg"
+                                                      alt="iconfinder">
+                                          </button></td>
+                                    <td><button class="press"
+                                                onclick="insert('*')"> <img
+                                                      src="calculator/times_solid_icon.svg"
+                                                      alt="iconfinder"
+                                                      width="34"
+                                                      height="34"></button></td>
+                              </tr>
+                              <tr>
+                                    <td><button class="press"
+                                                onclick="insert('7')"><img
+                                                      src="calculator/number_seven_light_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('8')"><img
+                                                      src="calculator/number_eight_duotone_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('9')"><img
+                                                      src="calculator/number_nine_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('-')"><img
+                                                      src="calculator/math_minus_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                              </tr>
+                              <tr>
+                                    <td><button class="press"
+                                                onclick="insert('4')"><img
+                                                      src="calculator/number_four_duotone_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('5')"><img
+                                                      src="calculator/number_five_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('6')"><img
+                                                      src="calculator/number_six_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('+')"><img
+                                                      src="calculator/math_plus_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                              </tr>
+                              <tr>
+                                    <td><button class="press"
+                                                onclick="insert('1')"><img
+                                                      src="calculator/number_one_light_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('2')"><img
+                                                      src="calculator/number_two_fill_icon.svg"
+                                                      alt="iconfinder"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('3')"><img
+                                                      src="calculator/number_three_icon.svg"
+                                                      alt></button></td>
+                                    <td rowspan="2"><button class="press"
+                                                style="height: 106px;"
+                                                onclick="calculare()"><img
+                                                      src="calculator/math_equal_icon.svg"
+                                                      alt> </button></td>
+                              </tr>
+                              <tr>
+                                    <td colspan="2"><button class="press"
+                                                style="width: 106px;"
+                                                onclick="insert('0')"><img
+                                                      src="calculator/number_zero_bold_icon.svg"
+                                                      alt="iconfinder"
+                                                      class="nothing"></button></td>
+                                    <td><button class="press"
+                                                onclick="insert('.')"><img
+                                                      src="calculator/point_icon.svg"
+                                                      alt> </button></td>
+                              </tr>
+                        </table>
+                  </div>
+
+                  <!--Final código calculator-->
+                  <!-- Linkar com a pasta javaScript-->
+                  <script type="text/javascript"
+                        src="media_aluno/js.js"></script>
+                  <script type="text/javascript"
+                        src="calculator/jscal.js"></script>
+            </body>
+
+      </html>
